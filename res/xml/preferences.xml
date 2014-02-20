@@ -1,0 +1,46 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<PreferenceCategory
+    	android:title="@string/todayfm_compitition_preferences">
+
+	    <EditTextPreference
+	        android:id="@+id/phone_edittext"
+        	android:key="@string/phone_key"
+            android:title="@string/phone"
+            android:inputType="phone"
+    		android:digits="1234567890"
+            android:summary="@string/summary_phone_preference"
+            android:dialogTitle="@string/dialog_phone_preference" />
+
+	    <ListPreference
+	        android:id="@+id/list_preference"
+	        android:defaultValue="0"
+            android:key="@string/prefix_list_key"
+            android:title="@string/title_list_preference"
+            android:summary="@string/summary_list_preference"
+            android:entries="@array/entries_list_preference"
+            android:entryValues="@array/entryvalues_list_preference"
+            android:dialogTitle="@string/dialog_title_list_preference" />
+
+        <EditTextPreference
+            android:id="@+id/name_edittext"
+        	android:key="@string/name_key"
+            android:title="@string/name"
+            android:summary="@string/summary_name_preference"
+            android:dialogTitle="@string/dialog_name_preference" />
+                
+        <CheckBoxPreference
+            android:id="@+id/location_checkbox"
+            android:key="@string/location_checkbox_key"
+            android:title="@string/title_location_checkbox_preference"
+            android:summary="@string/summary_location_checkbox_preference" />
+        
+        <EditTextPreference
+            android:id="@+id/location_edittext"
+        	android:key="@string/location_key"
+            android:title="@string/location"
+            android:summary="@string/summary_location_preference"
+            android:dialogTitle="@string/dialog_location_preference" />
+    </PreferenceCategory>
+</PreferenceScreen>
